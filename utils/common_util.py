@@ -27,10 +27,12 @@ def cost_time(func):
         t = time.perf_counter()
         result = await func(*args, **kwargs)
         elapsed_time = time.perf_counter() - t
-        if isinstance(result, JSONResponse):
+        if isinstance(result, dict):
+            result["cost_time"] = elapsed_time
+        elif isinstance(result, JSONResponse):
             result_content = result.body.decode()
             result_dict = json.loads(result_content)
-            result_dict["speed_time"] = elapsed_time
+            result_dict["cost_time"] = elapsed_time
             return JSONResponse(result_dict)
         return result
 
@@ -38,6 +40,7 @@ def cost_time(func):
         return func_async
     else:
         return func
+
 
 
 class Logger:

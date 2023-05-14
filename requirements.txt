@@ -1,2 +1,17 @@
 fastapi
 uvicorn
+loguru
+aiofiles
+python-multipart
+python-docx
+chardet
+pandas
+openpyxl
+python-pptx
+pdfplumber
+pypdf
+tabula-py
+pdf2image
+paddleocr
+paddlespeech
+moviepy
