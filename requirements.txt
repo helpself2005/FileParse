@@ -10,6 +10,7 @@ openpyxl
 python-pptx
 pdfplumber
 pypdf
+PyPDF2
 tabula-py
 pdf2image
 paddleocr
