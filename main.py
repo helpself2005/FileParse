@@ -23,4 +23,4 @@ app.include_router(fp_router, prefix="/file_parse", tags=["文本解析"])
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=1701, log_level="debug", reload=True)
+    uvicorn.run(app, host="0.0.0.0", port=1701, log_level="debug", reload=False)
