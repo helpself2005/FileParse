@@ -1,0 +1,8 @@
+POST http://127.0.0.1:1701/api/file_parser
+Content-Type: multipart/form-data; boundary=MyBoundary
+
+--MyBoundary
+Content-Disposition: form-data; name="files"; filename="/home/tcai/workspace/test.doc"
+Content-Type: application/octet-stream
+
+--MyBoundary--

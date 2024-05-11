@@ -19,7 +19,7 @@ app = FastAPI(
 )
 
 
-app.include_router(fp_router, prefix="/file_parse", tags=["文本解析"])
+app.include_router(fp_router, prefix="/api", tags=["文本解析"])
 
 
 if __name__ == "__main__":

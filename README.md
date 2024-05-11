@@ -38,6 +38,8 @@ git clone https://github.com/sanmaomashi/FileParse.git
 
 ```bash
 pip install -r requirements -i https://mirror.baidu.com/pypi/simple
+sudo apt-get install libreoffice
+export LD_LIBRARY_PATH=/usr/lib/libreoffice/program:$LD_LIBRARY_PATH
 ```
 
 3. 执行项目
